@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shazrahh WoW</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header>
+        <h1><img src="favi.png" height="100px" width="100px">Shazrahh WoW</h1>
+        <nav>
+            <ul id="hl">
+                <li><a href="/FAQ">FAQ</a></li>
+                <li><a href="/Pvp servers">Pvp servers</a></li>
+                <li><a href="/Pve servers">Pve servers</a></li>
+                <li><a href="/Rules">Rules</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button aria-label = "Поиск"><img src="lupa.png" width="32px" height="32px"></button>
+        </div>
+    </header>
+<main>
+    <form method="post">
+        <p>
+            <label for="mail">Введите email</label>
+            <input type="email" name="email" id="mail" required placeholder="example@gmail.com">
+        </p>
+        <p>
+            <label for="name">Введите никнейм</label>
+            <input type="text" name="name" id="name" required placeholder="Example">
+        </p>
+        <p>
+            <label for="phone">Введите номер телефона</label>
+            <input type="tel" name="phone" id="phone" required placeholder="8 (***) ***-**-**" pattern="[0-9]{,11}">
+        </p>
+        <p>
+            <label for="passwd">Введите пароль (от 3 до 16 символов)</label>
+            <input type="password" name="passwd" id="passwd" minlength="3" maxlength="16" required>
+        </p>
+        <p>
+            <input id="datetime" type="date"> Введите дату рождения
+        </p>
+        <label for="region-select">Ваш регион</label>
+        <select if="region-select">
+            <option value="">-- Выберите регион --</option>
+            <option value="EU">Европа</option>
+            <option value="USA">Америка</option>
+            <option value="Asia">Азия</option>
+        </select>
+        <fieldset>
+            <legend>Выберите фракцию:</legend>
+                <input type="radio" id="Choice1" name="contact" value="email">
+                <label for="Choice1">Альянс</label>
+                <input type="radio" id="Choice2" name="contact" value="phone">
+                <label for="Choice2">Орда</label>
+            </fieldset>
+        <p>
+            <label name="avatar">Загрузите аватар</label>
+            <input type="file" name="avatar"> 
+        </p>
+        <p>
+            Расскажите о себе
+            <p><textarea id="about" rows="5" cols="25" minlength="0" maxlength="256" placeholder="Я очень крутой!"></textarea></p>
+        </p>
+        <p>
+            <label for="agreement">Согласен с политикой конфиденциальности</label>
+            <input type="checkbox" name="agreement" id="agreement" checked="checked" required>
+        </p>
+        <p>
+            <label for="ad">Хочу получать информацию о промоакциях на почту</label>
+            <input type="checkbox" name="ad" id="ad" checked="checked">
+        </p>
+        <p><input type="submit"></p>
+    </form>
+</main>
+<iframe src="Video.html" title="Trailer" width=1300px height=750px></iframe>
+<footer>
+<p>Свяжитесь с автором данной страницы:</p>
+<address>
+<a href="maito:orlov.d.k1@edu.mirea.ru">orlov.d.k1@edu.mirea.ru</a><br>
+<a href="tel:89217875996">+7 (921) 787-59-96</a>
+</address>
+</footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap&family=Oswald:wght@400&display=swap" rel="stylesheet');
+
+
+h1{
+    font-size: 300%;
+    align-self: center;
+}
+
+#hl li{
+    display: inline-flex;
+    font-size: 175%;
+    padding: 10px;
+}
+
+#hl a{
+    text-align: center;
+    font-family: 'Lobster';
+    color: black;
+    text-decoration: none;
+}
+
+#hl a:hover {
+    color: rgb(121, 0, 0);  
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-family: 'Lobster';
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: 120px;
+    background-color:rgb(243, 222, 151);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(243, 222, 151);
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+main{
+    margin-left: 2%;
+    margin-right: 1%;
+    padding-top: 120px;
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    background:rgb(0, 0, 0);
+    padding-left: 10px;
+    font-size: 11pt;
+}
+
+footer > p{
+    color: #eee;
+}
+
+address > a{
+    color: #eee;
+}
+
+form{
+    background-color: rgb(255, 184, 125);
+    padding: 1%;
+}
+
+#mail::placeholder{
+    color: brown;
+}
+
+#mail:focus{
+    background-color: bisque;
+}
+
+#name::placeholder{
+    color: brown;
+}
+
+#name:focus{
+    background-color: bisque;
+}
+
+#phone::placeholder{
+    color: brown;
+}
+
+#phone:focus{
+    background-color: bisque;
+}
+
+#about::placeholder{
+    color: rgb(165, 42, 144);
+}
+
+#about:focus{
+    background-color: bisque;
+}
+
+#passwd:focus{
+    background-color: bisque;
+}
+
+iframe{
+    margin: 2%;
+}
