@@ -1,0 +1,278 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <div class="scroll"> <!-- Скролл-галерея -->
+        <section class="scroll-list">
+            <a class="content" href="rap.html">
+                <img class="img-scroll" src = "https://wallpaperaccess.com/full/240342.jpg">
+                     <div class="text-over-image">
+                        <span class="text-over-image2">Музыкальный жанр, развитый в США в 1970-х годах.</span>
+                    </div>  
+                <span class="genre">Hip-Hop</span>
+            </a>
+            <a class="content" href="country.html">
+                <img class="img-scroll" src = "https://images.fineartamerica.com/images-medium-large/country-and-western-painting-peter-g-dobson.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Музыкальный жанр, развитый сельским населением на юге и западе США</span>
+                    </div>
+                <span class="genre">Country</span>
+            </a>
+            <a class="content" href="metal.html">
+                <img class="img-scroll" src = "https://i.pinimg.com/originals/0f/ef/4a/0fef4a739a1235ac3e8dcd39baad0e54.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Музыкальный жанр, разновидность рок-музыки, сформировавшаяся в начале и середине 1970-х годов</span>
+                    </div>
+                <span class="genre">Metal</span>
+            </a>
+            <a class="content" href="classic.html">
+                <img class="img-scroll" src = "https://images.saatchiart.com/saatchi/1083954/art/4975745/4045567-HSC00001-7.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Образцовые музыкальные произведения, золотой фонд мировой музыкальной культуры.</span>
+                    </div>
+                <span class="genre">Classic</span>
+            </a>
+            <a class="content" href="jazz.html">
+                <img class="img-scroll" src = "https://i.pinimg.com/originals/97/81/87/978187408c09844294f380a696e684f5.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Музыкальный жанр, сочетающий в себе африканские ритмы, европейскую гармонию и афро- и латиноамериканский фольклор.</span>
+                    </div>
+                <span class="genre">Jazz</span>
+            </a>
+            <a class="content" href="raggae.html">
+                <img class="img-scroll" src = "https://i.pinimg.com/originals/e9/8f/2e/e98f2e44a5f79157f646a8909020029b.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Направление современной музыки, сформировавшееся на Ямайке в конце 1960-х</span>
+                    </div>
+                <span class="genre">Raggae</span>
+            </a>
+            <a class="content" href="indie.html">
+                <img class="img-scroll" src = "https://cdn.dribbble.com/userupload/3002948/file/original-bc8e627ae9d85300ed59a499d9bbd3e8.png?crop=0x470-2500x2345&resize=400x0">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Включает в себя музыкальные жанры, независимые от коммерческой поп-музыки и мейнстрима</span>
+                    </div>
+                <span class="genre">Indie</span>
+            </a>
+            <a class="content" href="punk.html">
+                <img class="img-scroll" src = "https://cdn.dribbble.com/users/116958/screenshots/14004393/media/dd7852201bf236726eb86f50881f8118.jpg?compress=1&resize=400x300">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">От англ. Punk — «хулиган». Субкультура возникла в конце 1960-х.</span>
+                    </div>
+                    <span class="genre">Punk</span>
+            </a>
+            <a class="content" href="electronic.html">
+                <img class="img-scroll" src = "https://render.fineartamerica.com/images/rendered/search/print/8/8/break/images/artworkimages/medium/2/retro-futuristic-background-1980s-kelvin-degree.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Музыка, созданная с использованием электромузыкальных инструментов и электронных технологий</span>
+                    </div>
+                <span class="genre">Electronic</span>
+            </a>
+            <a class="content-last" href="blues.html">
+                <img class="img-scroll" src = "https://www.googobits.com/wp-content/uploads/2018/06/blues-music.jpg">
+                    <div class="text-over-image">
+                        <span class="text-over-image2">Вид афроамериканской традиционной музыки. Зародился в конце XIX века в афроамериканском сообществе Юго-востока США</span>
+                    </div>
+                <span class="genre">Blues</span>
+            </a>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <script>
+                window.onload = function () {
+                    var scroll = $(".scroll-list");
+                    scroll.mousedown(function () {
+                        var startX = this.scrollLeft + event.pageX;
+                        var startY = this.scrollTop + event.pageY;
+                        scroll.mousemove(function () {
+                            this.scrollLeft = startX - event.pageX;
+                            this.scrollTop = startY - event.pageY;
+                            return false;
+                        });
+                    });
+                    $(window).mouseup(function () {
+                        scroll.off("mousemove"); 
+                    });
+                }
+            </script>
+        </section>
+    </div>
+    <main id="Mainmain">
+        <aside> <!-- Боковая панель -->
+        <h3>Разделы </h3>
+        <ul>
+            <li>
+                <a href="#News">
+                    Свежие новости
+                </a>
+            </li>
+            <li>
+                <a href="#Charts">
+                    Чарты
+                </a>
+            </li>
+            <li>
+                <a href="#Streaming">
+                    Стриминговые сервисы
+                </a>
+            </li>
+        </ul>
+        </aside>
+        <article>
+        <h2 id="News">Актуальные новости</h2> <!-- Заголовок второго уровня с якорем -->
+        <section class="section1">
+            <div class="news">
+                <div class="new">
+                    <img src="img/kurt.jpg">
+                    <span>Разбитая гитара Курта Кобейна ушла с молотка за 486 миллионов долларов в нью-йоркском "Хард рок кафе".</span>
+                </div>
+                <div class="new">
+                    <img src="img/би-2.jpg">
+                    <span>Одна из самых профессиональных рок-групп в России «Би-2» выпустила новый студийный альбом «Аллилуйя».</span>
+                </div>
+                <div class="new">
+                    <img src="img/taylor.jpg">
+                    <span>Тейлор Свифт кричала «10 минут подряд» после того, как получила номинацию на премию «Грэмми» в категории «Песня года».</span>
+                </div>
+                <div class="new">
+                    <img src="img/byonce.jpg">
+                    <span>Бейонсе получила девять номинаций на премию «Грэмми» 2023 года.</span>
+                </div>
+            </div>
+        </section>
+        <h2 id="Charts">Подборка чартов</h2>
+        <section class="section1">
+            <div class="charts">
+                    <div class="chart">
+                        <a href="https://music.yandex.ru/chart" onclick="goingoutside()">
+                            <img src="img/yandex.png">
+                        </a>
+                        <span>Чарт Яндекс Музыки</span>
+                    </div>
+                    <div class="chart">
+                        <a href="https://muz-tv.ru/charts/" onclick="goingoutside()">
+                            <img src="img/MUZ_TV_LOGO.png">
+                        </a>
+                        <span>Чарты Муз ТВ</span>
+                    </div>
+                    <div class="chart">
+                        <a href="https://www.shazam.com/ru/charts/top-200/world" onclick="goingoutside()">
+                            <img src="img/shazam.png">
+                        </a>
+                        <span>Чарт "ТОП-200 Мира" от Шазама.</span>
+                    </div>
+                    <div class="chart">
+                        <a href="https://mooscle.com/charts/" onclick="goingoutside()">
+                            <img src="img/Mooscle_Logo.jpeg">
+                        </a>
+                        <span>Mooscle чарт</span>
+                    </div>
+                </div>
+        </section>
+        <h2 id="Streaming">Стриминговые сервисы</h2> <!-- Заголовок второго уровня с якорем -->
+        <section class="container">
+            <p class="streamingheader">Yandex Music</p>
+            <p class="streamingheader">Apple Music</p>
+            <p class="streamingheader">Spotify</p>
+                <div class="box">
+                    <span class="span1"></span>
+                  <div class="content2">
+                    <p id="streaming1"></p>
+                    <a class="ref1" href="https://music.yandex.ru/home" onclick="goingoutside()">YandexMusic</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span class="span2"></span>
+                  <div class="content2">
+                    <p id="streaming2"></p>
+                    <a class="ref2" href="https://music.apple.com/ru/browse" onclick="goingoutside()">Apple Music</a>
+                  </div>
+                </div>
+                <div class="box">
+                  <span class="span3"></span>
+                  <div class="content2">
+                    <p id="streaming3"></p>
+                    <a class="ref3" href="https://www.spotify.com/int/why-not-available/" onclick="goingoutside()">Spotify</a>
+                  </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="logo" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="logo" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="logo" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="logo" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

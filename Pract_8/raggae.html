@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Регги</h2>
+        <img class="image" src="img/reggie.jpg">
+        <span>Корни регги – в этнической инструментальной музыке Ямайки, а также и в ритм-энд-блюзе. Популярнейшая музыка у бедных обитателей Ямайки, в сороковые годы именовалась как «менто» - это были характерные африканские песни, которые достались обитателям острова от их предков, ведь многие жители этого солнечного острова, являлись потомками темнокожих невольников, завезенных на Ямайку в семнадцатом веке из Африки.
+            Исполнялись они под гитару и перкуссию, а движения танцев туземной культуры, таких как румба, меренга, калипсо и самба, под африканские напевы, были основой музыки островов.
+            Сплав под названием регги возник в 60-х годах, когда музыканты ямайки пытались воссоздать ритм-энд-блюз Нового Орлеана и Мемфиса, который прослушивали через радиотрансляции. Конечно, то, что у них получалось, довольно сильно отличалось от оригинала.
+            При написании этих хитов некоторые детали просто пропускали, а в место них вклинивали такую родимую для них ямайскую менто - музыку. И, конечно же, каждый музыкант пытался добавить по возможности какую-то свою изюминку в композицию. Темп регги неспешен, а ритм расслабленный и затейливый: сильные доли нередко пропускаются вовсе, а на слабые активно делается акцент (аккордами гитары и духовыми инструментами).
+            Басовая же партия может быть довольно витиеватой. Очень важно разыскать «необходимый» ритм для регги-музыканта, благодаря которому, создаются те «вибрации позитива», которые и обязана передавать музыка регги.
+            Охватив в себе идеи множества музыкальных течений, регги остаётся преданным своему духу - духу мира, гармонии. Мировоззрение этой музыки основано именно в этом. Внутреннее совершенствование, отсутствие негатива – подобная концепция этого музыкального течения, предполагающая так же братство и равенство всему миру.
+            Регги музыка примирения, спокойствия и позитива.</span>
+    </div>
+    <div class="top">
+        <h2>Наш топ интересных исполнителей:</h2>
+        <ul>
+            <li><a href="https://music.yandex.ru/artist/1402" onclick="goingoutside()">-Bob Marley</a></li>
+            <li><a href="https://music.yandex.ru/artist/1550" onclick="goingoutside()">-Bob Marley & The Wailers</a></li>
+            <li><a href="https://music.yandex.ru/artist/44873" onclick="goingoutside()">-Matisyahu</a></li>
+            <li><a href="https://music.yandex.ru/artist/197880" onclick="goingoutside()">-Gentleman</a></li>
+            <li><a href="https://music.yandex.ru/artist/1714943" onclick="goingoutside()">-5'nizza</a></li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

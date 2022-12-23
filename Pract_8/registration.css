@@ -1,0 +1,110 @@
+.registration{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    top:120px;
+}
+
+.box2{
+    position: relative;
+    width: calc(100vw / 2);
+    background: rgba(17, 17, 17, 0.466);
+    border-radius: 8px;
+}
+
+.form > h1{
+    color: rgb(145, 143, 253);
+    text-decoration: underline;
+    font-weight: 800;
+    margin-left: 5%;
+    letter-spacing: 0.08em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.inputboxreg{
+    position: relative;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inputboxreg input{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color:rgb(145, 143, 253);
+    font-size: 1.5em;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.inputboxreg input:focus{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    background-color: rgb(145, 143, 253);
+    border: none;
+    outline: 2px solid black;
+    border-radius: 10px;
+    color:#860000;
+    transition: all 0.5s;
+}
+
+.form{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.linksreg{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.linksreg a{
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: white;
+    width: 30%;
+    background-color: #00000077;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.regsub{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.regsubmit{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(145, 143, 253);
+    border: 2px solid black;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 4px;
+}

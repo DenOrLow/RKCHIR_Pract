@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История классической музыки</h2>
+        <img class="image" src="img/classic.jpg">
+        <span>Исторически понятие «классическая музыка» (или «музыкальная классика») связано с эпохой классицизма, её поздним, просветительским этапом. Вплоть до 19 века классическая музыка создавалась для состоятельных и образованных слоев населения, которые могли по достоинству оценить ее. В 20 веке ситуация кардинально изменилась, к искусству, просвещению и образованию начали тянуться самые широкие массы населения. Классические произведения получили повсеместное распространение и перестали быть характерной чертой высшего общества, позволить себе слушать ее теперь могли практически все. Но далеко не все стремились к этому, потому что понять классику, разглядеть ее красоту и необыкновенность дано далеко не каждому.</span>
+    </div>
+    <div class="top">
+        <span id="NoList">В классической музыке настолько большое количество великих музыкантов, что уместить их на одной странице просто невозможно, а не включать кого-то в список было бы преступлением. Поэтому рекомендуем включить плейлист-сборник классической музыки и наслаждаться.</span>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История панк-рока</h2>
+        <img class="image" src="img/punx.jpg">
+        <span>В начале и середине 1960-х в Северной Америке стала формироваться сцена гаражного рока — предшественника панка. С самого начала представители жанра противопоставляли себя помпезности мейнстримного рока 1970-х: как правило, панк-группы записывали короткие, очень динамичные песни с резкими мелодиями и грубым вокалом, минимальным набором аппаратуры, а также социальными и политизированными текстами, направленными против истеблишмента. Одной из ключевых особенностей панка была DIY-идеология; многие исполнители самостоятельно продюсировали свои записи и распространяли их собственными силами или через независимые лейблы.
+            Впервые «панк» был использован в качестве музыкального термина в начале 1970-х. Его стали употреблять некоторые американские критики для описания гаражных групп и их поклонников. К концу 1976 года ряд исполнителей — New York Dolls, Television и Ramones из Нью-Йорка, Sex Pistols, The Clash и The Damned из Лондона — стали считаться авангардом нового музыкального движения. Годом позже жанр обрёл международную популярность и стал важным культурным явлением в Соединённом Королевстве. По большей части, панк-рок оставался в нише локальных андеграундных сцен, которые, как правило, избегали контакта с мейнстримом.</span>
+    </div>
+    <div class="top">
+        <h2>Наш топ интересных исполнителей:</h2>
+        <ul>
+            <li><a href="https://music.yandex.ru/artist/36762" onclick="goingoutside()">-Green Day</a></li>
+            <li><a href="https://music.yandex.ru/artist/64592" onclick="goingoutside()">-The Offspring</a></li>
+            <li><a href="https://music.yandex.ru/artist/5950" onclick="goingoutside()">-Sum 41</a></li>
+            <li><a href="https://music.yandex.ru/artist/15753" onclick="goingoutside()">-Rise Against</a></li>
+            <li><a href="https://music.yandex.ru/artist/44167" onclick="goingoutside()">-Billy Talent</a></li>
+            <li><a href="https://music.yandex.ru/artist/48814" onclick="goingoutside()">-My Chemical Romance</a></li>
+            <li><a href="https://music.yandex.ru/artist/15757" onclick="goingoutside()">-Social Distortion</a></li>
+            <li><a href="https://music.yandex.ru/artist/41052" onclick="goingoutside()">-Король и Шут</a></li>
+            <li><a href="https://music.yandex.ru/artist/41136" onclick="goingoutside()">-Приключения Электроников</a></li>
+            <li><a href="https://music.yandex.ru/artist/158511" onclick="goingoutside()">-Сектор Газа</a></li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

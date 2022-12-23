@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Hip-Hop музыки</h2>
+        <img class="image" src="img/hiphop.png">
+        <span>Хип-хоп как музыкальный жанр и культура сформировался в 1970-х годах, когда районные вечеринки стали всё более популярными в Нью-Йорке, особенно среди афроамериканской молодёжи, проживающей в Бронксе. На районных вечеринках диджеи играли «брейки» (соло на ударных) популярных песен, используя два виниловых проигрывателя и диджейский микшер, чтобы иметь возможность проигрывать «брейки» из двух копий одной и той же записи, чередуя одну за другой и увеличивая «брейк». Раннее развитие хип-хопа происходило по мере того, как технология семплирования и драм-машины стали широко доступны и приемлемыми по цене. Наряду с «брейками» были разработаны методы тёрнтейблизма, такие как скретчинг и битматчинг, а поверх битов использовались ямайские распевы. Исполнение рэпа развивалось как вокальный стиль, в котором артист говорит или произносит слова нараспев ритмично с помощью инструментального или синтезированного бита. Хип-хоп-музыка официально не записывалась для воспроизведения на радио или телевидении до 1979 года, в основном из-за бедности во время зарождения жанра и отсутствия признания за пределами районов гетто.  Олдскул хип-хоп был первой мейнстримной волной в этом жанре, отмеченной влиянием диско и текстами, ориентированными на вечеринки.</span>
+    </div>
+    <h3>Самые популярные поджанры</h2>
+    <div class="gallery">
+        <div class="section11">
+            <span class="rap-genre">Cloud rap</span>
+            <span>Микрожанр хип-хоп-музыки. Обычно характеризуется замедленными («туманными») инструментальными партиями и лоу-фай звучанием.</span>
+        </div>
+        <div class="section2">
+            <span class="rap-genre">Old School Rap</span>
+            <span>Cтиль ранней хип-хоп-музыки, который зародился в конце 1970-х. Характерна простая техника и легкие рифмы.</span>
+        </div>
+        <div class="section3">
+            <span class="rap-genre">Gangsta Rap</span>
+            <span>Появился в конце 1980-х – начале 1990-х. Тексты посвящены жизни криминального мира афроамериканских гетто.</span>
+        </div>
+        <div class="section4">
+            <span class="rap-genre">Jazz Rap</span>
+            <span>Биты в джаз-рэпе представляют собой джазовые семплы, а тексты носят исключительно позитивную окраску.</span>
+        </div>
+        <div class="section5">
+            <span class="rap-genre">Drill</span>
+            <span>Поджанр гангста-рэпа, зародившийся в Чикаго. Дрилл отличается мрачными текстами про насилие и жизнь уличных банд.</span>
+        </div>
+        <div class="section6">
+            <span class="rap-genre">Snap</span>
+            <span>Поджанр хип-хопа, зародившийся в Атланте в нулевых. В основу легли южный стиль рэпа, кранк, диско и фанк.</span>
+        </div>
+        <div class="section7">
+            <span class="rap-genre">Grime</span>
+            <span>Зародился в Лондоне в начале нулевых. В переводе с английского означает «грязь», и сначала термин использовался для описания музыки низкого качества.</span>
+        </div>
+    </div>
+    <div class="top">
+        <h2>Наш топ интересных исполнителей:</h2>
+        <ul>
+            <li><a href="https://music.yandex.ru/artist/11232" onclick="goingoutside()">-Eminem (Old School)</a></li>
+            <li><a href="https://music.yandex.ru/artist/3150766" onclick="goingoutside()">-REDO (Grime)</a></li>
+            <li><a href="https://music.yandex.ru/artist/249991" onclick="goingoutside()">-Oxxxymiron (Old School)</a></li>
+            <li><a href="https://music.yandex.ru/artist/8925" onclick="goingoutside()">-The Roots (Jazz Rap)</a></li>
+            <li><a href="https://music.yandex.ru/artist/7428452" onclick="goingoutside()">-Pop Smoke (Drill)</a></li>
+            <li><a href="https://music.yandex.ru/artist/631822" onclick="goingoutside()">-A$AP Rocky (Cloud Rap)</a></li>
+            <li><a href="https://music.yandex.ru/artist/111004" onclick="goingoutside()">-Tech N9ne (Gangsta Rap)</a></li>
+            <li><a href="https://music.yandex.ru/artist/88397" onclick="goingoutside()">-Dem Franchize Boyz (Snap)</a></li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

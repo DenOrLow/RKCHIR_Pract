@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Джаза</h2>
+        <img class="image" src="img/jazz.jpg">
+        <span>Джаз (англ. Jazz) — форма музыкального искусства, возникшая в начале XX века в США в результате синтеза африканской и европейской культур и получившая впоследствии повсеместное распространение.
+            Джаз - потрясающая музыка, живая, непрестанно развивающаяcя, вобравшая ритмический гений Африки, сокровища тысячелетнего искусства игры на барабанах, ритуальных, обрядовых песнопений. Добавьте хоровое и сольное пение баптистских, протестантских церквей - противоположные вещи слились воедино, подарив миру удивительное искусство! История джаза необычна, динамична, наполнена удивительными событиями, которые повлияли на мировой музыкальный процесс. Истоки джаза лежат в традициях африканской музыки. Ее основоположниками можно считать народы африканского континента. Привезённые в Новый свет из Африки рабы не были выходцами из одного рода, часто не понимали друг друга. Необходимость взаимодействия и общения привела к объединению, созданию единой культуры, в том числе и музыкальной. Для нее характерны сложные ритмы, танцы с притоптыванием, прихлопыванием. Они вместе с блюзовыми мотивами дали новое музыкальное направление.
+            Процессы смешивания африканской музыкальной культуры и европейской, которая претерпела серьёзные изменения, происходили начиная с восемнадцатого века, и в девятнадцатом привели к возникновению нового музыкального направления. Поэтому всемирная история джаза неотделима от истории американского джаза.</span>
+    </div>
+    <h3>Основные течения</h2>
+    <div class="gallery">
+        <div class="section11">
+            <span class="rap-genre">Свинг</span>
+            <span>стиль оркестрового джаза, сложившийся на рубеже 1920—1930-х годов в результате синтеза негритянских и европейских стилевых форм джазовой музыки.</span>
+        </div>
+        <div class="section2">
+            <span class="rap-genre">Новоорлеанский джаз</span>
+            <span>Термином «новоорлеанский», или «традиционный», джаз обычно определяют стиль музыкантов, исполнявших джаз в Новом Орлеане в период между 1900 и 1917 гг.</span>
+        </div>
+        <div class="section3">
+            <span class="rap-genre">Симфоджаз</span>
+            <span>Симфоджаз был создан в 1920-х годах в США в результате слияния культур Европы, Африки и Латинской Америки.</span>
+        </div>
+        <div class="section4">
+            <span class="rap-genre">Бибоп</span>
+            <span>Джазовый стиль, сложившийся в начале — середине 40-х годов XX века в Нью-Йорке и открывший собой эпоху модерн-джаза. Характеризуется быстрым темпом и сложными импровизациями, основанными на изменении гармонии, а не мелодии.</span>
+        </div>
+        <div class="section5">
+            <span class="rap-genre">Биг-бэнды</span>
+            <span>Классическая, сложившаяся форма биг-бэндов известна в джазе с начала 1920-х годов. Эта форма сохранила свою актуальность вплоть до конца 1940-х. Музыканты, поступившие в большинство биг-бэндов как правило чуть ли не в подростковом возрасте, играли вполне определённые партии, или заученные на репетициях, или по нотам. </span>
+        </div>
+        <div class="section6">
+            <span class="rap-genre">Фри-джаз</span>
+            <span>Возможно самое спорное движение в истории джаза возникло с появлением свободного джаза, или «Новой Вещи», как оно впоследствии было названо.</span>
+        </div>
+        <div class="section7">
+            <span class="rap-genre">Джаз-мануш</span>
+            <span>Джаз-мануш — направление в «гитарном» джазе, основанное братьями Ферре и Джанго Рейнхардтом. Соединяет в себе традиционную технику игры на гитаре цыган группы мануш и свинг.</span>
+        </div>
+    </div>
+    <div class="top">
+        <span id="NoList">В мире джаза невозможно выделить "любимого" исполнителя и кого-то порекомендовать, по-скольку это, наверное, самый разнообразный музыкальный жанр. Поэтому рекомендуем вам самостоятельно найти своего любимого исполнителя. А начать можно с джазовых плейлистов или радио.</span>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

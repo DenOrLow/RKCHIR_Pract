@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Блюза</h2>
+        <img class="image" src="img/blues.jpg">
+        <span>
+            Возник во второй половине XIX века в афроамериканском сообществе Юго-востока США, в среде выходцев с плантаций «Хлопкового пояса». С тех пор в литературных произведениях фразу «Blue Devils» часто используют для описания подавленного настроения.
+            Блюз сложился из таких её проявлений, как рабочая песня, холлер, выкрики в ритуалах африканских религиозных культов — ринг-шаут, спиричуэлс (христианские песнопения), шант и баллады.
+            Большинство исполнителей блюза до старости продолжали работать на разного рода низкооплачиваемых работах (на плантациях, строительстве речных дамбах и дорог), как и практически всё чёрное население США в первой половине XX века. Они бродяжничали по стране, перебиваясь случайными заработками, сохраняя при этом личную независимость, готовые в любой момент продолжить свои скитания. Иногда удавалось устроиться играть на вечеринках и в джук-джойнтах, где музыканту редко платили деньгами, а чаще — едой и выпивкой. Таков был характерный стиль жизни исполнителя блюза: тяжёлый физический труд и скудный заработок. Но гитара была рядом всегда, и можно было часто услышать блюз в любом месте: на углу улицы, в вагоне товарного поезда.
+        </span>
+    </div>
+    <h3>Основные направления блюза</h2>
+    <div class="gallery">
+        <div class="section112">
+            <span class="rap-genre">Классический блюз</span>
+            <span>В нём утвердились характерные особенности, унаследованные от музыки афроамериканцев, и чётко определилась 12-тактовая форма и гармоническое сопровождение.</span>
+        </div>
+        <div class="section22">
+            <span class="rap-genre">Ритм-н-блюз</span>
+            <span>Ритм-н-блюз получил широкое распространение во времена Второй мировой войны. Можно отметить двух ведущих исполнителей этого периода Джо Тёрнера и Джимми Рашинга. Джо Тёрнер был знаменит своими быстрыми блюзами, которые он не столько пел, а как бы кричал на фоне энергичного фортепианного аккомпанемента в стиле «буги-вуги».</span>
+        </div>
+        <div class="section32">
+            <span class="rap-genre">Британский блюз</span>
+            <span>В 1960-х в Британии под влиянием американских блюзовых и рок-н-ролльных записей возникла череда местных исполнителей блюза, которые во время британского вторжения попали в американские чарты и получили мировую известность, в их числе The Rolling Stones, The Yardbirds.</span>
+        </div>
+    </div>
+    <div class="top">
+        <h2>В Блюзе, как и в Классической музыке или Джазовой музыке очень сложно выделить какого-то исполнителя как рекомендованного. Есть множество великолепных композиторов и исполнителей, с многими из которых можно ознакомиться в соответствующих плейлистах.</h2>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

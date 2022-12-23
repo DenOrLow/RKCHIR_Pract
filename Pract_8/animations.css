@@ -1,0 +1,233 @@
+.content:hover .text-over-image2{
+    opacity: 1;
+    transition: all 0.2s 0.3s;
+}
+
+.content:hover .img-scroll{
+    opacity: 70%;
+    transform: scale(var(--scale-size));
+    transition: all 0.5s;
+}
+
+.content:hover .genre{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.content:hover{
+    margin-top: var(--content-top-margin-size);
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: margin-top 0.3s, margin-right 0.1s 0.2s, margin-leftt 0.1s 0.2s;
+}
+
+.scroll-list:hover .content{ 
+    filter: blur(1.5px);
+    transition: all 0.3s;
+}
+
+.scroll-list:hover .content-last{ 
+    filter: blur(1.5px);
+    transition: all 0.3s;
+}
+
+.scroll-list:hover .content:hover{ 
+    filter: blur(0px) saturate(150%) brightness(110%) drop-shadow(4px 4px rgb(94, 33, 33));
+    transition: all 0.3s;
+}
+
+.scroll-list:hover .content-last:hover{ 
+    filter: blur(0px) saturate(150%) brightness(110%) drop-shadow(4px 4px rgb(94, 33, 33));
+    transition: all 0.3s;
+}
+
+.content-last:hover .text-over-image2{
+    opacity: 1;
+    transition: all 0.2s 0.3s;
+}
+
+.content-last:hover .text-over-image2::before{
+    opacity: 1;
+    content: icon;
+    color: brown;
+}
+
+.content-last:hover .img-scroll{
+    opacity: 70%;
+    transform: scale(1.15, 1.15);
+    transition: all 0.5s;
+}
+
+.content-last:hover .genre{
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.content-last:hover{
+    margin-top: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: margin-top 0.3s, margin-right 0.1s 0.2s, margin-leftt 0.1s 0.2s;
+}
+
+.text-over-image{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-over-image2{
+    height: fit-content;
+    word-wrap:break-word;
+    opacity: 0;
+    transition: opacity 0.3s 0.15s;
+}
+
+.dance:hover .text-for-video{
+    color: rgb(0, 0, 0);
+    background-color: rgba(165, 42, 42, 0.5);
+    transform: scale(1);
+}
+
+.text-for-video::before{
+    opacity: 1;
+    content: "*";
+    width: 3px;
+    height: 3px;
+    color: brown;
+}
+
+.button1 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ff0000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+    min-height: 60px;
+    max-width: 200px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+    background: linear-gradient(45deg, rgb(200, 255, 98), rgb(45, 255, 140));
+}
+
+.button1:hover{
+    transform: scale(1.5);
+    color:rgb(255, 0, 212);
+    transition: all 3s cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.button2{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ff0000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+    min-height: 60px;
+    max-width: 200px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+    background: linear-gradient(45deg, rgb(200, 255, 98), rgb(45, 255, 140));
+    animation-name: button2anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+}
+
+.button2:hover{
+    animation: none;
+}
+
+.button2:active{
+    background: rgb(0, 0, 0);
+}
+
+.button3{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    box-sizing: border-box;
+    color: #ff0000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+    min-height: 60px;
+    max-width: 200px;
+    outline: none;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+    position: relative;
+}
+
+.button3::before, .button3::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 0px solid white;
+    transition: all 1s;
+}
+
+.button3::before {
+    bottom: 0px;
+    right: 0px;
+    border-top: 5px solid rgb(60, 255, 0);
+    border-left: 5px solid rgb(60, 255, 0);
+    transform: rotate(180deg);
+}
+
+.button3::after {
+    top: 0px;
+    left: 0px;
+    border-top: 5px solid rgb(60, 255, 0);
+    border-left: 5px solid rgb(60, 255, 0);
+}
+
+.button3:hover{
+    background-color: #1A1A1A;
+    transition: all 1s;
+}
+
+.button3:hover::after, .button3:hover::before {
+    width: 95%;
+    height: 90%;
+}
+
+@keyframes button2anim {
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}

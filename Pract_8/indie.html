@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Инди музыки</h2>
+        <span id="Indie">Когда в 1970-1980 годах нельзя было выпустить кино или записать песню без участия огромных корпораций, появились независимые студии — индепендент, от которых появилось сокращение «инди». Благодаря независимым студиям многие музыканты экспериментировали со звучанием и предлагали новые вариации музыкальных стилей, могли выпускать альбомы. Они пропагандировали творческую индивидуальность, были нонконформистами и представляли в основном андеграунд.
+            Так и сложилось, что в музыке понятие «инди» сначала относилось не к жанрам, а к студиям — лейблам. И лишь позднее его стали применять к продуктам таких компаний.
+            Многие инди-музыканты и сейчас записывают альбомы без посторонней помощи. Их музыка считается более свободной и оригинальной, менее попсовой.
+            Изначально считалось, что независимые музыканты создают музыку для себя и друзей, но не ради прибыли и популярности.
+            Успех инди-продуктов связан с тем, что независимые лейблы могли создавать то, что хотят, а не то, что диктуют корпорации, нацеленные на прибыль.</span>
+    </div>
+    <h3>Самые популярные поджанры — все известные Вам жанры музыки с приставкой "Инди"</h2>
+    <div class="top">
+        <h2>Наш топ интересных исполнителей:</h2>
+        <ul>
+            <li><a href="https://music.yandex.ru/artist/208167" onclick="goingoutside()">-Arctic Monkeys</a></li>
+            <li><a href="https://music.yandex.ru/artist/36825" onclick="goingoutside()">-Radiohead</a></li>
+            <li><a href="https://music.yandex.ru/artist/5529" onclick="goingoutside()">-The Killers</a></li>
+            <li><a href="https://music.yandex.ru/artist/671" onclick="goingoutside()">-Coldplay</a></li>
+            <li><a href="https://music.yandex.ru/artist/128301" onclick="goingoutside()">-Death Cab for Cutie</a></li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>

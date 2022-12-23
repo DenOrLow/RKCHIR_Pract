@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- Определение версии HTML -->
+<html lang="en"> <!-- Обозначение HTML-рзаметки -->
+<head> <!-- Открытие головного раздела -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Призывает Internet Explorer работать в определённом режиме документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Music</title> <!-- Установка имени страницы -->
+	<link rel="icon" type="image/png" href="img/favi.png"> <!-- Установка Fav иконки -->
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body> <!-- Открытие основного сождержимого страницы -->
+    <header> <!-- Заголовочная часть страницы -->
+        <h1><img id="favi" src="img/favi.png" height="100px" width="100px">World of Music</h1> <!-- FAV-иконка и заголовок -->
+        <nav><!-- Навигация -->
+            <input id="menu-toggle" type="checkbox"> <!-- Меню-бургер -->
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="Navigationlist"> <!-- Навигационный список-->
+                <li><a href="index.html">Встпуительная страница</a></li>
+                <li><a href="home.html">Основная страница</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+        </nav>
+        <div class="Search">
+            <button class="SearchButton" aria-label = "Поиск" onclick="search_overlay_1()"> <!-- Кнопка поиска -->
+                <img src="img/lupa.png" width="32px" height="32px">
+            </button>
+            <button class="CloseSearchButton" aria-label = "Поиск" onclick="search_overlay_2()"> <!-- Кнопка поиска -->
+                <img src="img/x.png" width="32px" height="32px">
+            </button>
+        </div>
+    </header>
+    <div class="search-overlay">
+        <input type="text" pattern="text" class="search-input" placeholder="ПОИСК">
+    </div>
+    <main>
+    <div class="history">
+        <h2>История Metal музыки</h2>
+        <img class="image" src="img/metal.jpeg">
+        <span>Металл возник в середине 70-х годов в Соединенных Штатах Америки под влиянием относительно "не тяжелых" рок-н-ролл команд. Многие фанаты подобной музыки в перспективе наблюдали утяжеление гитарных риффов и срыв ограничений в лирике, потому как рамки блюза, джаза и кантри устраивали не всех. Так и произошло - вскоре группы начали приобретать более тяжелый окрас в исполнении своих песен: перегруженные гитары, маршевая ритм-секция, агрессивный вокал. Мода на тяжелый прогрессивный звук росла, и уже сегодня мы можем наблюдать представителей жанра металл во всех его проявлениях практически в любой точке Земли. Ежегодно во многих странах проводят металл-фесты и концерты металл-групп, а число фанатов такой музыки невероятно быстро растет. Музыка «металлических» жанров распространена практически во всех странах, но наиболее крупные сцены сформировались в северной Европе и Северной Америке.</span>
+    </div>
+    <h3>Самые популярные поджанры</h2>
+    <div class="gallery">
+        <div class="section11">
+            <span class="rap-genre">Heavy Metall</span>
+            <span>Собственно, родоначальник тяжелой музыки. Жанр метал строится из хэви-метала во всех его проявлениях.</span>
+        </div>
+        <div class="section2">
+            <span class="rap-genre">Speed Metal</span>
+            <span>Весьма интересный жанр, характеризующий себя скоростной и дробящей ритм техникой.</span>
+        </div>
+        <div class="section3">
+            <span class="rap-genre">Trash Metal</span>
+            <span>Чем-то напоминает спид-метал, однако имеет более диссонансное и ярое звучание, лирика все же часто протестная, напоминающая панк-рок.</span>
+        </div>
+        <div class="section4">
+            <span class="rap-genre">Doom Metal</span>
+            <span>Пожалуй, самый медленный из представленных тяжелых жанров. Настолько медленный и монотонный, что музыкальный рисунок и ритм вообще может ни разу не поменяться за всю песню.</span>
+        </div>
+        <div class="section5">
+            <span class="rap-genre">Black Metal</span>
+            <span>Самый скандальный и идеологический жанр. Песни жанра металл имеют мало общего с религией, если речь идет не о блэк-металле.</span>
+        </div>
+        <div class="section6">
+            <span class="rap-genre">Power Metal</span>
+            <span>Быстрый, сложный и популярный жанр металл музыки. Характерной чертой является очень высокий (часто мужской) вокал и средневековая лирика. </span>
+        </div>
+        <div class="section7">
+            <span class="rap-genre">Viking Metal</span>
+            <span>Название говорит само за себя, несложно догадаться о чем написана лирика большинства песен этого жанра. Это направление чаще можно распознать именно по живым выступлениям групп, потому как в викинг-метале главным является скандинавское шоу, через которое передается зов предков.</span>
+        </div>
+    </div>
+    <div class="top">
+        <h2>Наш топ интересных исполнителей:</h2>
+        <ul>
+            <li><a href="https://music.yandex.ru/artist/1529749" onclick="goingoutside()">-Powerwolf (Power Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/31653" onclick="goingoutside()">-Dragonforce (Power Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/45653" onclick="goingoutside()">-Slayer (Trash Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/3121" onclick="goingoutside()">-Metallica (Speed Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/3276" onclick="goingoutside()">-Black Sabbath (Heavy Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/171309" onclick="goingoutside()">-Judas Priest (Heavy Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/648910" onclick="goingoutside()">-Amon Amarth (Viking Metal)</a></li>
+            <li><a href="https://music.yandex.ru/artist/243481" onclick="goingoutside()">-Anathema (Doom Metal)</a></li>
+        </ul>
+    </div>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h2>О нас</h2>
+            <span>World of music — команда влюбленных в музыку авторов, которые собрали на данной платформе все (на наш взгляд) самое интересное и полезное о музыке: новости, свежие чарты и подборки, музыкальные стриминговые сервисы и многое другое.</span>
+        </div>
+        <div class="dark">
+            <ul class="btn-list rounded">
+                <li>
+                    <a href="" class="btn-gradient rounded youtube">
+                        <img class="" src="img/YouTube.webp" width="30px" height="20px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded vk">
+                        <img class="" src="img/vk.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded instagram">
+                        <img class="" src="img/Inst.webp" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded telegram">
+                        <img class="" src="img/Telega.svg.png" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn-gradient rounded discord">
+                        <img class="ds" src="img/discord.png" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li>phone: +79217875996</li>
+                <li>mail: orlov.d.k1@edu.mirea.ru</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <span>Copyright &#169; 2022 Student MIREA All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
