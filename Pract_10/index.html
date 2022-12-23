@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pract</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="generate()">
+<div id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend eros sed velit pharetra varius. Nullam molestie consectetur massa a lobortis. Aliquam mi nunc, aliquam eget quam sed, consequat pharetra mauris. Etiam scelerisque arcu a pulvinar aliquam. </div>
+<button id="textbutton">Кнопка редактора текста</button>
+<div class="login-form">
+    <div class="captcha">
+        <label for="captcha-input">Введите капчу</label>
+        <div id="image" class="inline" selectable="False">
+        </div>
+        <div id="user-input" class="inline">
+            <input type="text" id="submit"
+                placeholder="Captcha code" />
+        </div>
+        <div class="" onclick="generate()">
+            <i class="fas fa-sync"></i>
+        </div>
+        <div id="check-c" class="check-container">
+            <input type="text" id="input_val" />
+            <p id="operation"><span id="num1">1</span> + <span id="num2">20</span></p>
+            <button id="btn1">Подтвердить</button>
+        </div>
+    
+    
+
+        <input type="submit" id="btn" onclick="printmsg()" placeholder="Sub" />
+
+        <p id="key"></p>
+
+        </div>
+        <div class="form-input">
+            <button id="login-btn">Login</button>
+        </div>
+</div>
+
+<button id="summ" onclick="summator()">Корзина</button>
+
+<script src="script.js"></script>
+</body>
+</html>
