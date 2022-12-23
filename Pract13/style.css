@@ -1,0 +1,119 @@
+
+ ul{
+    list-style: none;
+ }
+.body13 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+ .slider {
+    border-radius: 5px;
+    background: #ff7777;
+    width: 310px;
+    height: 15px;
+    margin: 30px 0 30px 10px;
+  }
+  
+  .thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: rgb(3, 233, 34);
+    cursor: pointer;
+  }
+  #train {
+    position: relative;
+    cursor: pointer;
+  }
+  .poezd
+  {
+    width: 180px;
+    height: 150px;
+}
+
+textarea {
+    display: block;
+    border: 1px solid lightblue;
+    color: #444;
+    font-size: 110%;
+    margin-left: 400px;
+  }
+  
+  button {
+    margin-top: 30px;
+    margin-left: 580px;
+    margin-bottom: 30px;
+  }
+  #storage {
+    width: 50%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: lightblue;
+    color: white;
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    td {
+    background: lightblue;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
+#cart {
+    width: 50%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: lightblue;
+    color: black;
+    padding: 10px 20px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    td {
+    background: lightblue;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }   
+h2
+{
+    margin-right: 340px;
+    color: lightblue;
+}
+.lasttask
+{
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: 30px;
+}
+.selected{
+    color:rgb(250, 103, 103);
+}
+#field {
+    height: 200px;
+    border-bottom: 3px black groove;
+    position: relative;
+  }
+  
+  #ball {
+    position: absolute;
+    cursor: pointer;
+  }
