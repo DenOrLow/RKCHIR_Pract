@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap&family=Oswald:wght@400&display=swap" rel="stylesheet');
+
+
+h1{
+    font-size: 300%;
+}
+
+#hl li{
+    display: inline-flex;
+    font-size: 175%;
+    padding: 10px;
+}
+
+#hl a{
+    text-align: center;
+    font-family: 'Lobster';
+    color: black;
+    text-decoration: none;
+}
+
+#hl a:hover {
+    color: rgb(121, 0, 0);  
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-family: 'Lobster';
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: 120px;
+    background-color:rgb(243, 222, 151);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(243, 222, 151);
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+main{
+    margin: 2%;
+    padding-top: 120px;
+    word-break: keep-all;
+    text-align: justify;
+    text-indent: 2%;
+    font-style: oblique;
+}
+
+article {
+    width: 75%;
+    display: block;
+    border: 1px solid rgb(104, 5, 5);
+    margin-left: 2%;
+    margin-bottom: 10px;
+    padding: 1%;
+    background-color: rgb(153, 108, 57);
+}
+ 
+article > section{
+    display: inline-block;
+    border: 1px dotted rgb(68, 0, 255);
+    margin: 0;
+    padding: 10px;
+    background-color: #eee;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+aside {
+    position: sticky;
+    background-color: rgb(0, 0, 0);
+    top: 120px;
+    width: 20%;
+    margin-right: 1%;
+    float: right;
+}
+
+#Hot {
+    color: #eee;
+    font-family: 'Oswald';
+}
+
+#Guitar{
+    width: 25%;
+    height: 25%;
+    float: right;
+    position: relative;
+    right: 1%;
+    left: 1%;
+    z-index: 0;
+}
+
+#AbsTest{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: blueviolet;
+}
+
+#scrip{
+    margin: 2%;
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+
+#ill{
+    list-style: square;
+    display: block;
+}
+
+footer {
+    background:rgb(0, 0, 0);
+    padding-left: 10px;
+    font-size: 11pt;
+}
+
+footer > p{
+    color: #eee;
+}
+
+address > a{
+    color: #eee;
+}
